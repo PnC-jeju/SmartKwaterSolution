@@ -1,0 +1,164 @@
+# Logfile created on 2021-08-02 14:12:18 +0900 by logger.rb/v1.4.3
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-02 14:12:18 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e8442f91] Running /usr/bin/env mkdir -p /tmp as deploy@13.125.158.130
+ DEBUG [e8442f91] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e8442f91] Finished in 0.674 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4ea1cf31ce47d598df5c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4ea1cf31ce47d598df5c.sh 100.0%
+  INFO [15767852] Running /usr/bin/env chmod 700 /tmp/git-ssh-4ea1cf31ce47d598df5c.sh as deploy@13.125.158.130
+ DEBUG [15767852] Command: /usr/bin/env chmod 700 /tmp/git-ssh-4ea1cf31ce47d598df5c.sh
+  INFO [15767852] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [f6398aa6] Running /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD as deploy@13.125.158.130
+ DEBUG [f6398aa6] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ea1cf31ce47d598df5c.sh" ; /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD )
+ DEBUG [f6398aa6] 	d6c4bbad08d99cb959bba98d0a78eb8777df5cfb	HEAD
+  INFO [f6398aa6] Finished in 2.400 seconds with exit status 0 (successful).
+  INFO [10f3b7be] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [10f3b7be] Command: /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases
+  INFO [10f3b7be] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [76a3f6db] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads as deploy@13.125.158.130
+ DEBUG [76a3f6db] Command: /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads
+  INFO [76a3f6db] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [ba213989] Running [ -f /home/deploy/SmartKwaterSolution/current/REVISION ] as deploy@13.125.158.130
+ DEBUG [ba213989] Command: [ -f /home/deploy/SmartKwaterSolution/current/REVISION ]
+ DEBUG [ba213989] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [9f539d50] Running [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ] as deploy@13.125.158.130
+ DEBUG [9f539d50] Command: [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ]
+ DEBUG [9f539d50] Finished in 0.073 seconds with exit status 1 (failed).
+ DEBUG [9e63089e] Running if test ! -d /home/deploy/SmartKwaterSolution; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [9e63089e] Command: if test ! -d /home/deploy/SmartKwaterSolution; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution'" 1>&2; false; fi
+ DEBUG [9e63089e] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [afbb4a35] Running /usr/bin/env git clone --mirror git@github.com:PnC-jeju/SmartKwaterSolution.git /home/deploy/SmartKwaterSolution/repo as deploy@13.125.158.130
+ DEBUG [afbb4a35] Command: cd /home/deploy/SmartKwaterSolution && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ea1cf31ce47d598df5c.sh" ; /usr/bin/env git clone --mirror git@github.com:PnC-jeju/SmartKwaterSolution.git /home/deploy/SmartKwaterSolution/repo )
+ DEBUG [afbb4a35] 	Cloning into bare repository '/home/deploy/SmartKwaterSolution/repo'...
+  INFO [afbb4a35] Finished in 2.965 seconds with exit status 0 (successful).
+ DEBUG [4bb7e0c7] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [4bb7e0c7] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [4bb7e0c7] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [a9f63e50] Running /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git as deploy@13.125.158.130
+ DEBUG [a9f63e50] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ea1cf31ce47d598df5c.sh" ; /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git )
+  INFO [a9f63e50] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [1dcfa650] Running /usr/bin/env git remote update --prune as deploy@13.125.158.130
+ DEBUG [1dcfa650] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ea1cf31ce47d598df5c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1dcfa650] 	Fetching origin
+  INFO [1dcfa650] Finished in 2.437 seconds with exit status 0 (successful).
+ DEBUG [6a994986] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [6a994986] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [6a994986] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [092a5ddf] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210802051221 as deploy@13.125.158.130
+ DEBUG [092a5ddf] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ea1cf31ce47d598df5c.sh" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210802051221 )
+  INFO [092a5ddf] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [21a1f5e9] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210802051221 as deploy@13.125.158.130
+ DEBUG [21a1f5e9] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ea1cf31ce47d598df5c.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210802051221 )
+  INFO [21a1f5e9] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [a52527cf] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [a52527cf] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [a52527cf] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG [aef4b274] Running /usr/bin/env git rev-list --max-count=1 main as deploy@13.125.158.130
+ DEBUG [aef4b274] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ea1cf31ce47d598df5c.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [aef4b274] 	d6c4bbad08d99cb959bba98d0a78eb8777df5cfb
+ DEBUG [aef4b274] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [2e772938] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210802051221; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210802051221'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [2e772938] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210802051221; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210802051221'" 1>&2; false; fi
+ DEBUG [2e772938] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [55ea712f] Running /usr/bin/env echo "d6c4bbad08d99cb959bba98d0a78eb8777df5cfb" > REVISION as deploy@13.125.158.130
+ DEBUG [55ea712f] Command: cd /home/deploy/SmartKwaterSolution/releases/20210802051221 && /usr/bin/env echo "d6c4bbad08d99cb959bba98d0a78eb8777df5cfb" > REVISION
+  INFO [55ea712f] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [cfd9f08c] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210802051221 /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor /home/deploy/SmartKwaterSolution/releases/20210802051221/public as deploy@13.125.158.130
+ DEBUG [cfd9f08c] Command: /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210802051221 /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor /home/deploy/SmartKwaterSolution/releases/20210802051221/public
+  INFO [cfd9f08c] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [36646edb] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/log ] as deploy@13.125.158.130
+ DEBUG [36646edb] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/log ]
+ DEBUG [36646edb] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [48121c1e] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/log ] as deploy@13.125.158.130
+ DEBUG [48121c1e] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/log ]
+ DEBUG [48121c1e] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [febda225] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802051221/log as deploy@13.125.158.130
+ DEBUG [febda225] Command: /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802051221/log
+  INFO [febda225] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [f7c8840e] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210802051221/log as deploy@13.125.158.130
+ DEBUG [f7c8840e] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210802051221/log
+  INFO [f7c8840e] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [bd008d74] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [bd008d74] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids ]
+ DEBUG [bd008d74] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [468e7e7b] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [468e7e7b] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids ]
+ DEBUG [468e7e7b] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [e5937e61] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids as deploy@13.125.158.130
+ DEBUG [e5937e61] Command: /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids
+  INFO [e5937e61] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [95f24a9d] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids as deploy@13.125.158.130
+ DEBUG [95f24a9d] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/pids
+  INFO [95f24a9d] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [b06ba840] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [b06ba840] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/cache ]
+ DEBUG [b06ba840] Finished in 0.034 seconds with exit status 1 (failed).
+ DEBUG [f6dae0ed] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [f6dae0ed] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/cache ]
+ DEBUG [f6dae0ed] Finished in 0.075 seconds with exit status 1 (failed).
+  INFO [5dc8ea39] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/cache as deploy@13.125.158.130
+ DEBUG [5dc8ea39] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/cache
+  INFO [5dc8ea39] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [c40c8488] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [c40c8488] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/sockets ]
+ DEBUG [c40c8488] Finished in 0.077 seconds with exit status 1 (failed).
+ DEBUG [17fe082f] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [17fe082f] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/sockets ]
+ DEBUG [17fe082f] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [5bbdadae] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/sockets as deploy@13.125.158.130
+ DEBUG [5bbdadae] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210802051221/tmp/sockets
+  INFO [5bbdadae] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [e4a0924d] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [e4a0924d] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor/bundle ]
+ DEBUG [e4a0924d] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [328c60fa] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [328c60fa] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor/bundle ]
+ DEBUG [328c60fa] Finished in 0.076 seconds with exit status 1 (failed).
+  INFO [8c10d82c] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor/bundle as deploy@13.125.158.130
+ DEBUG [8c10d82c] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210802051221/vendor/bundle
+  INFO [8c10d82c] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [a3f3466e] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/.bundle ] as deploy@13.125.158.130
+ DEBUG [a3f3466e] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/.bundle ]
+ DEBUG [a3f3466e] Finished in 0.076 seconds with exit status 1 (failed).
+ DEBUG [b7c6aa1e] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/.bundle ] as deploy@13.125.158.130
+ DEBUG [b7c6aa1e] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/.bundle ]
+ DEBUG [b7c6aa1e] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [18239d68] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210802051221/.bundle as deploy@13.125.158.130
+ DEBUG [18239d68] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210802051221/.bundle
+  INFO [18239d68] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [8e4ecd3d] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/public/system ] as deploy@13.125.158.130
+ DEBUG [8e4ecd3d] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/public/system ]
+ DEBUG [8e4ecd3d] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [3243dac4] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/public/system ] as deploy@13.125.158.130
+ DEBUG [3243dac4] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/public/system ]
+ DEBUG [3243dac4] Finished in 0.076 seconds with exit status 1 (failed).
+  INFO [bb6d625c] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210802051221/public/system as deploy@13.125.158.130
+ DEBUG [bb6d625c] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210802051221/public/system
+  INFO [bb6d625c] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [a5e5db1a] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/public/uploads ] as deploy@13.125.158.130
+ DEBUG [a5e5db1a] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210802051221/public/uploads ]
+ DEBUG [a5e5db1a] Finished in 0.077 seconds with exit status 1 (failed).
+ DEBUG [b1c45fca] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/public/uploads ] as deploy@13.125.158.130
+ DEBUG [b1c45fca] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210802051221/public/uploads ]
+ DEBUG [b1c45fca] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [ab1616f0] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210802051221/public/uploads as deploy@13.125.158.130
+ DEBUG [ab1616f0] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210802051221/public/uploads
+  INFO [ab1616f0] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [1071a602] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210802051221 /home/deploy/SmartKwaterSolution/releases/current as deploy@13.125.158.130
+ DEBUG [1071a602] Command: /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210802051221 /home/deploy/SmartKwaterSolution/releases/current
+  INFO [1071a602] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [08bc04d8] Running /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution as deploy@13.125.158.130
+ DEBUG [08bc04d8] Command: /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution
+  INFO [08bc04d8] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [ffe9a496] Running /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [ffe9a496] Command: /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases
+ DEBUG [ffe9a496] 	20210802051221
+ DEBUG [ffe9a496] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [538044a8] Running if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [538044a8] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi
+ DEBUG [538044a8] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [4c0ffc7b] Running /usr/bin/env echo "Branch main (at d6c4bbad08d99cb959bba98d0a78eb8777df5cfb) deployed as release 20210802051221 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log as deploy@13.125.158.130
+ DEBUG [4c0ffc7b] Command: cd /home/deploy/SmartKwaterSolution/releases && /usr/bin/env echo "Branch main (at d6c4bbad08d99cb959bba98d0a78eb8777df5cfb) deployed as release 20210802051221 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log
+  INFO [4c0ffc7b] Finished in 0.036 seconds with exit status 0 (successful).

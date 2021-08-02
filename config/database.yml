@@ -18,7 +18,7 @@ production:
   <<: *default
   #hostname: 13.125.158.130
   database: kwaterdb
-  username: webuser01
+  username: deploy
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
   # mariadb의 db socket의 위치가 다르다.
   #socket: /tmp/mysql.sock

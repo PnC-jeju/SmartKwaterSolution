@@ -6221,3 +6221,1226 @@ Entrypoint application = js/application-c3e3aae48c4c321181e9.js js/application-c
   INFO [11153eb1] Running /usr/bin/env echo "Branch main (at 74a99ae77ee0e9c36d14dcd87e2bb4fa9ed0563b) deployed as release 20210803002354 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log as deploy@13.125.158.130
  DEBUG [11153eb1] Command: cd /home/deploy/SmartKwaterSolution/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "Branch main (at 74a99ae77ee0e9c36d14dcd87e2bb4fa9ed0563b) deployed as release 20210803002354 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log )
   INFO [11153eb1] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-03 09:41:25 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [190726e8] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@13.125.158.130
+ DEBUG [190726e8] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [190726e8] Finished in 0.716 seconds with exit status 0 (successful).
+ DEBUG [ccbd7156] Running /usr/bin/env which passenger as deploy@13.125.158.130
+ DEBUG [ccbd7156] Command: /usr/bin/env which passenger
+ DEBUG [ccbd7156] 	/usr/bin/passenger
+ DEBUG [ccbd7156] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [7475bd30] Running /usr/bin/env mkdir -p /tmp as deploy@13.125.158.130
+ DEBUG [7475bd30] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [7475bd30] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f7c01bb937011c030e8b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f7c01bb937011c030e8b.sh 100.0%
+  INFO [dfd00b95] Running /usr/bin/env chmod 700 /tmp/git-ssh-f7c01bb937011c030e8b.sh as deploy@13.125.158.130
+ DEBUG [dfd00b95] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-f7c01bb937011c030e8b.sh )
+  INFO [dfd00b95] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [a2707a7b] Running /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD as deploy@13.125.158.130
+ DEBUG [a2707a7b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f7c01bb937011c030e8b.sh" ; /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD )
+ DEBUG [a2707a7b] 	e8405fd59fd35a984d1f41618c37f90990efc72a	HEAD
+  INFO [a2707a7b] Finished in 2.430 seconds with exit status 0 (successful).
+  INFO [bc4dad29] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [bc4dad29] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases )
+  INFO [bc4dad29] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [aa1e391a] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets as deploy@13.125.158.130
+ DEBUG [aa1e391a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets )
+  INFO [aa1e391a] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [e0a59b9c] Running [ -f /home/deploy/SmartKwaterSolution/current/REVISION ] as deploy@13.125.158.130
+ DEBUG [e0a59b9c] Command: [ -f /home/deploy/SmartKwaterSolution/current/REVISION ]
+ DEBUG [e0a59b9c] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [0cecaf7b] Running /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null as deploy@13.125.158.130
+ DEBUG [0cecaf7b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null )
+ DEBUG [0cecaf7b] 	74a99ae77ee0e9c36d14dcd87e2bb4fa9ed0563b
+ DEBUG [0cecaf7b] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [35a891f7] Running [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ] as deploy@13.125.158.130
+ DEBUG [35a891f7] Command: [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ]
+ DEBUG [35a891f7] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/SmartKwaterSolution/repo
+ DEBUG [d8e83a85] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [d8e83a85] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [d8e83a85] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [f19fa4c9] Running /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git as deploy@13.125.158.130
+ DEBUG [f19fa4c9] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f7c01bb937011c030e8b.sh" ; /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git )
+  INFO [f19fa4c9] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [ee766246] Running /usr/bin/env git remote update --prune as deploy@13.125.158.130
+ DEBUG [ee766246] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f7c01bb937011c030e8b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ee766246] 	Fetching origin
+ DEBUG [ee766246] 	From github.com:PnC-jeju/SmartKwaterSolution
+   74a99ae..e8405fd  main       -> main
+  INFO [ee766246] Finished in 2.667 seconds with exit status 0 (successful).
+ DEBUG [90c2c7d0] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [90c2c7d0] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [90c2c7d0] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [9cf9998a] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803004128 as deploy@13.125.158.130
+ DEBUG [9cf9998a] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f7c01bb937011c030e8b.sh" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803004128 )
+  INFO [9cf9998a] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [3e655f89] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803004128 as deploy@13.125.158.130
+ DEBUG [3e655f89] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f7c01bb937011c030e8b.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803004128 )
+  INFO [3e655f89] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [e2ba6604] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [e2ba6604] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [e2ba6604] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [a5bdaac4] Running /usr/bin/env git rev-list --max-count=1 main as deploy@13.125.158.130
+ DEBUG [a5bdaac4] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f7c01bb937011c030e8b.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [a5bdaac4] 	e8405fd59fd35a984d1f41618c37f90990efc72a
+ DEBUG [a5bdaac4] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [8c121c82] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [8c121c82] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi
+ DEBUG [8c121c82] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [65657e73] Running /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION as deploy@13.125.158.130
+ DEBUG [65657e73] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION )
+  INFO [65657e73] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [60663537] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803004128 /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor /home/deploy/SmartKwaterSolution/releases/20210803004128/public as deploy@13.125.158.130
+ DEBUG [60663537] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803004128 /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor /home/deploy/SmartKwaterSolution/releases/20210803004128/public )
+  INFO [60663537] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [1fdbf06b] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/log ] as deploy@13.125.158.130
+ DEBUG [1fdbf06b] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/log ]
+ DEBUG [1fdbf06b] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [464cc581] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/log ] as deploy@13.125.158.130
+ DEBUG [464cc581] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/log ]
+ DEBUG [464cc581] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [904ba700] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803004128/log as deploy@13.125.158.130
+ DEBUG [904ba700] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803004128/log )
+  INFO [904ba700] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [252a0dde] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803004128/log as deploy@13.125.158.130
+ DEBUG [252a0dde] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803004128/log )
+  INFO [252a0dde] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [01c86bd5] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [01c86bd5] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids ]
+ DEBUG [01c86bd5] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [8fda8f9f] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [8fda8f9f] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids ]
+ DEBUG [8fda8f9f] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [29d56c11] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids as deploy@13.125.158.130
+ DEBUG [29d56c11] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids )
+  INFO [29d56c11] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [886cf249] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids as deploy@13.125.158.130
+ DEBUG [886cf249] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/pids )
+  INFO [886cf249] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [3d3ee9fd] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [3d3ee9fd] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/cache ]
+ DEBUG [3d3ee9fd] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [ac9480b6] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [ac9480b6] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/cache ]
+ DEBUG [ac9480b6] Finished in 0.075 seconds with exit status 1 (failed).
+  INFO [16bb148c] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/cache as deploy@13.125.158.130
+ DEBUG [16bb148c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/cache )
+  INFO [16bb148c] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [b6837573] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [b6837573] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/sockets ]
+ DEBUG [b6837573] Finished in 0.076 seconds with exit status 1 (failed).
+ DEBUG [2486fcbd] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [2486fcbd] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/sockets ]
+ DEBUG [2486fcbd] Finished in 0.031 seconds with exit status 1 (failed).
+  INFO [b7fd35d8] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/sockets as deploy@13.125.158.130
+ DEBUG [b7fd35d8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803004128/tmp/sockets )
+  INFO [b7fd35d8] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [b96ea457] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [b96ea457] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor/bundle ]
+ DEBUG [b96ea457] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [4c507d81] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [4c507d81] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor/bundle ]
+ DEBUG [4c507d81] Finished in 0.075 seconds with exit status 1 (failed).
+  INFO [8adacdda] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor/bundle as deploy@13.125.158.130
+ DEBUG [8adacdda] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803004128/vendor/bundle )
+  INFO [8adacdda] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [f83ef073] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/.bundle ] as deploy@13.125.158.130
+ DEBUG [f83ef073] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/.bundle ]
+ DEBUG [f83ef073] Finished in 0.074 seconds with exit status 1 (failed).
+ DEBUG [ecc1262a] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/.bundle ] as deploy@13.125.158.130
+ DEBUG [ecc1262a] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/.bundle ]
+ DEBUG [ecc1262a] Finished in 0.031 seconds with exit status 1 (failed).
+  INFO [1eb2e705] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803004128/.bundle as deploy@13.125.158.130
+ DEBUG [1eb2e705] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803004128/.bundle )
+  INFO [1eb2e705] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [3a90896d] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/public/system ] as deploy@13.125.158.130
+ DEBUG [3a90896d] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/public/system ]
+ DEBUG [3a90896d] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [58a20dba] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/public/system ] as deploy@13.125.158.130
+ DEBUG [58a20dba] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/public/system ]
+ DEBUG [58a20dba] Finished in 0.074 seconds with exit status 1 (failed).
+  INFO [20fb140d] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803004128/public/system as deploy@13.125.158.130
+ DEBUG [20fb140d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803004128/public/system )
+  INFO [20fb140d] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [17aeff72] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/public/uploads ] as deploy@13.125.158.130
+ DEBUG [17aeff72] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/public/uploads ]
+ DEBUG [17aeff72] Finished in 0.075 seconds with exit status 1 (failed).
+ DEBUG [51fc14df] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/public/uploads ] as deploy@13.125.158.130
+ DEBUG [51fc14df] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/public/uploads ]
+ DEBUG [51fc14df] Finished in 0.030 seconds with exit status 1 (failed).
+  INFO [580e52b6] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803004128/public/uploads as deploy@13.125.158.130
+ DEBUG [580e52b6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803004128/public/uploads )
+  INFO [580e52b6] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [a211f6ae] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets ] as deploy@13.125.158.130
+ DEBUG [a211f6ae] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets ]
+ DEBUG [a211f6ae] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [4121e3ed] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets ] as deploy@13.125.158.130
+ DEBUG [4121e3ed] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets ]
+ DEBUG [4121e3ed] Finished in 0.075 seconds with exit status 1 (failed).
+  INFO [2a38664c] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets as deploy@13.125.158.130
+ DEBUG [2a38664c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets )
+  INFO [2a38664c] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [bd5fcb2e] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [bd5fcb2e] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi
+ DEBUG [bd5fcb2e] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [2c0122bd] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@13.125.158.130
+ DEBUG [2c0122bd] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [2c0122bd] Finished in 0.260 seconds with exit status 0 (successful).
+  INFO [34be7f68] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle as deploy@13.125.158.130
+ DEBUG [34be7f68] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle )
+  INFO [34be7f68] Finished in 0.307 seconds with exit status 0 (successful).
+  INFO [9b826f9f] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@13.125.158.130
+ DEBUG [9b826f9f] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [9b826f9f] Finished in 0.254 seconds with exit status 0 (successful).
+ DEBUG [d9edeb6f] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [d9edeb6f] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi
+ DEBUG [d9edeb6f] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [7d784c16] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@13.125.158.130
+ DEBUG [7d784c16] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [7d784c16] 	The Gemfile's dependencies are satisfied
+ DEBUG [7d784c16] Finished in 0.345 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [df63e474] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [df63e474] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi
+ DEBUG [df63e474] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [2f86c8b9] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@13.125.158.130
+ DEBUG [2f86c8b9] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [2f86c8b9] 	yarn install v1.22.5
+ DEBUG [2f86c8b9] 	[1/4] Resolving packages...
+ DEBUG [2f86c8b9] 	[2/4] Fetching packages...
+ DEBUG [2f86c8b9] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [2f86c8b9] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [2f86c8b9] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [2f86c8b9] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [2f86c8b9] 	[3/4] Linking dependencies...
+ DEBUG [2f86c8b9] 	[4/4] Building fresh packages...
+ DEBUG [2f86c8b9] 	Done in 11.06s.
+ DEBUG [2f86c8b9] 	Compiling...
+ DEBUG [2f86c8b9] 	Compiled all packs in /home/deploy/SmartKwaterSolution/releases/20210803004128/public/packs
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Hash: e4cb1aa40fed2663ee2c
+Version: webpack 4.46.0
+Time: 6384ms
+Built at: 08/03/2021 12:41:57 AM
+                                        Asset       Size  Chunks                         Chunk Names
+       js/application-c3e3aae48c4c321181e9.js   69.4 KiB       0  [emitted] [immutable]  application
+    js/application-c3e3aae48c4c321181e9.js.br   15.4 KiB          [emitted]              
+    js/application-c3e3aae48c4c321181e9.js.gz   17.8 KiB          [emitted]              
+   js/application-c3e3aae48c4c321181e9.js.map    205 KiB       0  [emitted] [dev]        application
+js/application-c3e3aae48c4c321181e9.js.map.br   43.8 KiB          [emitted]              
+js/application-c3e3aae48c4c321181e9.js.map.gz   50.9 KiB          [emitted]              
+                                manifest.json  364 bytes          [emitted]              
+                             manifest.json.br  133 bytes          [emitted]              
+                             manifest.json.gz  142 bytes          [emitted]              
+Entrypoint application = js/application-c3e3aae48c4c321181e9.js js/application-c3e3aae48c4c321181e9.js.map
+[0] (webpack)/buildin/module.js 552 bytes {0} [built]
+[4] ./app/javascript/packs/application.js 480 bytes {0} [built]
+[5] ./app/javascript/channels/index.js 205 bytes {0} [built]
+[6] ./app/javascript/channels sync _channel\.js$ 160 bytes {0} [built]
+    + 3 hidden modules
+
+  INFO [2f86c8b9] Finished in 22.324 seconds with exit status 0 (successful).
+ DEBUG [524b9cea] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [524b9cea] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi
+ DEBUG [524b9cea] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [92462c5c] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803004128/assets_manifest_backup as deploy@13.125.158.130
+ DEBUG [92462c5c] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803004128/assets_manifest_backup )
+  INFO [92462c5c] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [d0264f7f] Running /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest* as deploy@13.125.158.130
+ DEBUG [d0264f7f] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest* )
+ DEBUG [d0264f7f] 	/home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json
+ DEBUG [d0264f7f] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [1055138b] Running /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest* as deploy@13.125.158.130
+ DEBUG [1055138b] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest* )
+ DEBUG [1055138b] 	/home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json
+ DEBUG [1055138b] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [8b7f6363] Running /usr/bin/env cp /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json /home/deploy/SmartKwaterSolution/releases/20210803004128/assets_manifest_backup as deploy@13.125.158.130
+ DEBUG [8b7f6363] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cp /home/deploy/SmartKwaterSolution/releases/20210803004128/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json /home/deploy/SmartKwaterSolution/releases/20210803004128/assets_manifest_backup )
+  INFO [8b7f6363] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [459b1b63] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [459b1b63] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803004128; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803004128'" 1>&2; false; fi
+ DEBUG [459b1b63] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [e6396091] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@13.125.158.130
+ DEBUG [e6396091] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803004128 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [e6396091] Finished in 2.353 seconds with exit status 0 (successful).
+  INFO [bc9a594a] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210803004128 /home/deploy/SmartKwaterSolution/releases/current as deploy@13.125.158.130
+ DEBUG [bc9a594a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210803004128 /home/deploy/SmartKwaterSolution/releases/current )
+  INFO [bc9a594a] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [5aecd1f0] Running /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution as deploy@13.125.158.130
+ DEBUG [5aecd1f0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution )
+  INFO [5aecd1f0] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [04fb491b] Running /usr/bin/env pwd as deploy@13.125.158.130
+ DEBUG [04fb491b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env pwd )
+ DEBUG [04fb491b] 	/home/deploy
+ DEBUG [04fb491b] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [c3c6cf12] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [c3c6cf12] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [c3c6cf12] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [ba46f923] Running /usr/bin/env passenger -v as deploy@13.125.158.130
+ DEBUG [ba46f923] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger -v )
+ DEBUG [ba46f923] 	Phusion Passenger(R) 6.0.10
+ DEBUG [ba46f923] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [17a90063] Running /usr/bin/env passenger-config restart-app /home/deploy/SmartKwaterSolution --ignore-app-not-running as deploy@13.125.158.130
+ DEBUG [17a90063] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger-config restart-app /home/deploy/SmartKwaterSolution --ignore-app-not-running )
+ DEBUG [17a90063] 	*** Cleaning stale instance directory /tmp/passenger.Heo2VgO
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.Heo2VgO/.
+Restarting /home/deploy/SmartKwaterSolution/current (production)
+  INFO [17a90063] Finished in 0.331 seconds with exit status 0 (successful).
+ DEBUG [cdd0d58d] Running /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [cdd0d58d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases )
+ DEBUG [cdd0d58d] 	20210802080152	20210802082221	20210802083000	20210802083740	20210803002354
+20210803004128
+ DEBUG [cdd0d58d] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 13.125.158.130
+ DEBUG [d63f0847] Running [ -d /home/deploy/SmartKwaterSolution/current ] as deploy@13.125.158.130
+ DEBUG [d63f0847] Command: [ -d /home/deploy/SmartKwaterSolution/current ]
+ DEBUG [d63f0847] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [0d7eb32d] Running /usr/bin/env readlink /home/deploy/SmartKwaterSolution/current as deploy@13.125.158.130
+ DEBUG [0d7eb32d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env readlink /home/deploy/SmartKwaterSolution/current )
+ DEBUG [0d7eb32d] 	/home/deploy/SmartKwaterSolution/releases/20210803004128
+ DEBUG [0d7eb32d] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [1b17173e] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802080152 as deploy@13.125.158.130
+ DEBUG [1b17173e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802080152 )
+  INFO [1b17173e] Finished in 1.775 seconds with exit status 0 (successful).
+ DEBUG [fa96e683] Running if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [fa96e683] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi
+ DEBUG [fa96e683] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [2a8c69de] Running /usr/bin/env echo "Branch main (at e8405fd59fd35a984d1f41618c37f90990efc72a) deployed as release 20210803004128 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log as deploy@13.125.158.130
+ DEBUG [2a8c69de] Command: cd /home/deploy/SmartKwaterSolution/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "Branch main (at e8405fd59fd35a984d1f41618c37f90990efc72a) deployed as release 20210803004128 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log )
+  INFO [2a8c69de] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-03 09:55:02 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [45b94b1d] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@13.125.158.130
+ DEBUG [45b94b1d] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [45b94b1d] Finished in 0.653 seconds with exit status 0 (successful).
+ DEBUG [62f7dcb3] Running /usr/bin/env which passenger as deploy@13.125.158.130
+ DEBUG [62f7dcb3] Command: /usr/bin/env which passenger
+ DEBUG [62f7dcb3] 	/usr/bin/passenger
+ DEBUG [62f7dcb3] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [e85c58a6] Running /usr/bin/env mkdir -p /tmp as deploy@13.125.158.130
+ DEBUG [e85c58a6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [e85c58a6] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2a60971738a818dea46c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2a60971738a818dea46c.sh 100.0%
+  INFO [ec2d818e] Running /usr/bin/env chmod 700 /tmp/git-ssh-2a60971738a818dea46c.sh as deploy@13.125.158.130
+ DEBUG [ec2d818e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-2a60971738a818dea46c.sh )
+  INFO [ec2d818e] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [369d5728] Running /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD as deploy@13.125.158.130
+ DEBUG [369d5728] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2a60971738a818dea46c.sh" ; /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD )
+ DEBUG [369d5728] 	e8405fd59fd35a984d1f41618c37f90990efc72a	HEAD
+  INFO [369d5728] Finished in 2.791 seconds with exit status 0 (successful).
+  INFO [bb379ad4] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [bb379ad4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases )
+  INFO [bb379ad4] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [feca9b8d] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets as deploy@13.125.158.130
+ DEBUG [feca9b8d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets )
+  INFO [feca9b8d] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [6e628152] Running [ -f /home/deploy/SmartKwaterSolution/current/REVISION ] as deploy@13.125.158.130
+ DEBUG [6e628152] Command: [ -f /home/deploy/SmartKwaterSolution/current/REVISION ]
+ DEBUG [6e628152] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [00e98d94] Running /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null as deploy@13.125.158.130
+ DEBUG [00e98d94] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null )
+ DEBUG [00e98d94] 	e8405fd59fd35a984d1f41618c37f90990efc72a
+ DEBUG [00e98d94] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [0375847c] Running [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ] as deploy@13.125.158.130
+ DEBUG [0375847c] Command: [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ]
+ DEBUG [0375847c] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/SmartKwaterSolution/repo
+ DEBUG [76e87225] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [76e87225] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [76e87225] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [053589b8] Running /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git as deploy@13.125.158.130
+ DEBUG [053589b8] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2a60971738a818dea46c.sh" ; /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git )
+  INFO [053589b8] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [0ba95d16] Running /usr/bin/env git remote update --prune as deploy@13.125.158.130
+ DEBUG [0ba95d16] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2a60971738a818dea46c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0ba95d16] 	Fetching origin
+  INFO [0ba95d16] Finished in 2.427 seconds with exit status 0 (successful).
+ DEBUG [13a9cbb3] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [13a9cbb3] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [13a9cbb3] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [b92a286f] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803005506 as deploy@13.125.158.130
+ DEBUG [b92a286f] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2a60971738a818dea46c.sh" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803005506 )
+  INFO [b92a286f] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [b88aa6bb] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803005506 as deploy@13.125.158.130
+ DEBUG [b88aa6bb] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2a60971738a818dea46c.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803005506 )
+  INFO [b88aa6bb] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [30d09919] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [30d09919] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [30d09919] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [c3bee32d] Running /usr/bin/env git rev-list --max-count=1 main as deploy@13.125.158.130
+ DEBUG [c3bee32d] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2a60971738a818dea46c.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [c3bee32d] 	e8405fd59fd35a984d1f41618c37f90990efc72a
+ DEBUG [c3bee32d] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [523b91a4] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [523b91a4] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi
+ DEBUG [523b91a4] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [7180b08f] Running /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION as deploy@13.125.158.130
+ DEBUG [7180b08f] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION )
+  INFO [7180b08f] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [d12c8dda] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803005506 /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor /home/deploy/SmartKwaterSolution/releases/20210803005506/public as deploy@13.125.158.130
+ DEBUG [d12c8dda] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803005506 /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor /home/deploy/SmartKwaterSolution/releases/20210803005506/public )
+  INFO [d12c8dda] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [71e369ee] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/log ] as deploy@13.125.158.130
+ DEBUG [71e369ee] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/log ]
+ DEBUG [71e369ee] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [b33e8cc1] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/log ] as deploy@13.125.158.130
+ DEBUG [b33e8cc1] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/log ]
+ DEBUG [b33e8cc1] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [ec1f3684] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803005506/log as deploy@13.125.158.130
+ DEBUG [ec1f3684] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803005506/log )
+  INFO [ec1f3684] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [caadf736] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803005506/log as deploy@13.125.158.130
+ DEBUG [caadf736] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803005506/log )
+  INFO [caadf736] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [45a6cb91] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [45a6cb91] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids ]
+ DEBUG [45a6cb91] Finished in 0.036 seconds with exit status 1 (failed).
+ DEBUG [d2df5256] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [d2df5256] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids ]
+ DEBUG [d2df5256] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [08004e85] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids as deploy@13.125.158.130
+ DEBUG [08004e85] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids )
+  INFO [08004e85] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [85a5133a] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids as deploy@13.125.158.130
+ DEBUG [85a5133a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/pids )
+  INFO [85a5133a] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [8f3637f2] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [8f3637f2] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/cache ]
+ DEBUG [8f3637f2] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [f1e5157b] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [f1e5157b] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/cache ]
+ DEBUG [f1e5157b] Finished in 0.076 seconds with exit status 1 (failed).
+  INFO [89392404] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/cache as deploy@13.125.158.130
+ DEBUG [89392404] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/cache )
+  INFO [89392404] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [e333d3c6] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [e333d3c6] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/sockets ]
+ DEBUG [e333d3c6] Finished in 0.073 seconds with exit status 1 (failed).
+ DEBUG [7c2b9bd7] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [7c2b9bd7] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/sockets ]
+ DEBUG [7c2b9bd7] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [f2388de6] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/sockets as deploy@13.125.158.130
+ DEBUG [f2388de6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803005506/tmp/sockets )
+  INFO [f2388de6] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [3a19a266] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [3a19a266] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor/bundle ]
+ DEBUG [3a19a266] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [495255eb] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [495255eb] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor/bundle ]
+ DEBUG [495255eb] Finished in 0.074 seconds with exit status 1 (failed).
+  INFO [ef969b8f] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor/bundle as deploy@13.125.158.130
+ DEBUG [ef969b8f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803005506/vendor/bundle )
+  INFO [ef969b8f] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [d977a4dc] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/.bundle ] as deploy@13.125.158.130
+ DEBUG [d977a4dc] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/.bundle ]
+ DEBUG [d977a4dc] Finished in 0.075 seconds with exit status 1 (failed).
+ DEBUG [2e57eb5e] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/.bundle ] as deploy@13.125.158.130
+ DEBUG [2e57eb5e] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/.bundle ]
+ DEBUG [2e57eb5e] Finished in 0.032 seconds with exit status 1 (failed).
+  INFO [01e0ac58] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803005506/.bundle as deploy@13.125.158.130
+ DEBUG [01e0ac58] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803005506/.bundle )
+  INFO [01e0ac58] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [4dbb45c8] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/public/system ] as deploy@13.125.158.130
+ DEBUG [4dbb45c8] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/public/system ]
+ DEBUG [4dbb45c8] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [aa7cad66] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/public/system ] as deploy@13.125.158.130
+ DEBUG [aa7cad66] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/public/system ]
+ DEBUG [aa7cad66] Finished in 0.074 seconds with exit status 1 (failed).
+  INFO [315ed8a7] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803005506/public/system as deploy@13.125.158.130
+ DEBUG [315ed8a7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803005506/public/system )
+  INFO [315ed8a7] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [5db6cfe4] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/public/uploads ] as deploy@13.125.158.130
+ DEBUG [5db6cfe4] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/public/uploads ]
+ DEBUG [5db6cfe4] Finished in 0.074 seconds with exit status 1 (failed).
+ DEBUG [a5222921] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/public/uploads ] as deploy@13.125.158.130
+ DEBUG [a5222921] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/public/uploads ]
+ DEBUG [a5222921] Finished in 0.032 seconds with exit status 1 (failed).
+  INFO [5ecf3c97] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803005506/public/uploads as deploy@13.125.158.130
+ DEBUG [5ecf3c97] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803005506/public/uploads )
+  INFO [5ecf3c97] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [2c823a30] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets ] as deploy@13.125.158.130
+ DEBUG [2c823a30] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets ]
+ DEBUG [2c823a30] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [4083023a] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets ] as deploy@13.125.158.130
+ DEBUG [4083023a] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets ]
+ DEBUG [4083023a] Finished in 0.073 seconds with exit status 1 (failed).
+  INFO [3d830d46] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets as deploy@13.125.158.130
+ DEBUG [3d830d46] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets )
+  INFO [3d830d46] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [80a71a2e] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [80a71a2e] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi
+ DEBUG [80a71a2e] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [a7c4eb05] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@13.125.158.130
+ DEBUG [a7c4eb05] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [a7c4eb05] Finished in 0.256 seconds with exit status 0 (successful).
+  INFO [7e51713b] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle as deploy@13.125.158.130
+ DEBUG [7e51713b] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle )
+  INFO [7e51713b] Finished in 0.302 seconds with exit status 0 (successful).
+  INFO [a776f1d4] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@13.125.158.130
+ DEBUG [a776f1d4] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [a776f1d4] Finished in 0.261 seconds with exit status 0 (successful).
+ DEBUG [b2b3b84e] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [b2b3b84e] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi
+ DEBUG [b2b3b84e] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [79f55564] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@13.125.158.130
+ DEBUG [79f55564] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [79f55564] 	The Gemfile's dependencies are satisfied
+ DEBUG [79f55564] Finished in 0.353 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [ee35107d] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [ee35107d] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi
+ DEBUG [ee35107d] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [fd897200] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@13.125.158.130
+ DEBUG [fd897200] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [fd897200] 	yarn install v1.22.5
+ DEBUG [fd897200] 	[1/4] Resolving packages...
+ DEBUG [fd897200] 	[2/4] Fetching packages...
+ DEBUG [fd897200] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [fd897200] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [fd897200] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [fd897200] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [fd897200] 	[3/4] Linking dependencies...
+ DEBUG [fd897200] 	[4/4] Building fresh packages...
+ DEBUG [fd897200] 	Done in 11.13s.
+ DEBUG [fd897200] 	Compiling...
+ DEBUG [fd897200] 	Compiled all packs in /home/deploy/SmartKwaterSolution/releases/20210803005506/public/packs
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Hash: e4cb1aa40fed2663ee2c
+Version: webpack 4.46.0
+Time: 6250ms
+Built at: 08/03/2021 12:55:34 AM
+                                        Asset       Size  Chunks                         Chunk Names
+       js/application-c3e3aae48c4c321181e9.js   69.4 KiB       0  [emitted] [immutable]  application
+    js/application-c3e3aae48c4c321181e9.js.br   15.4 KiB          [emitted]              
+    js/application-c3e3aae48c4c321181e9.js.gz   17.8 KiB          [emitted]              
+   js/application-c3e3aae48c4c321181e9.js.map    205 KiB       0  [emitted] [dev]        application
+js/application-c3e3aae48c4c321181e9.js.map.br   43.8 KiB          [emitted]              
+js/application-c3e3aae48c4c321181e9.js.map.gz   50.9 KiB          [emitted]              
+                                manifest.json  364 bytes          [emitted]              
+                             manifest.json.br  133 bytes          [emitted]              
+                             manifest.json.gz  142 bytes          [emitted]              
+Entrypoint application = js/application-c3e3aae48c4c321181e9.js js/application-c3e3aae48c4c321181e9.js.map
+[0] (webpack)/buildin/module.js 552 bytes {0} [built]
+[4] ./app/javascript/packs/application.js 480 bytes {0} [built]
+[5] ./app/javascript/channels/index.js 205 bytes {0} [built]
+[6] ./app/javascript/channels sync _channel\.js$ 160 bytes {0} [built]
+    + 3 hidden modules
+
+  INFO [fd897200] Finished in 22.258 seconds with exit status 0 (successful).
+ DEBUG [26be553f] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [26be553f] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi
+ DEBUG [26be553f] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [56536e1b] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803005506/assets_manifest_backup as deploy@13.125.158.130
+ DEBUG [56536e1b] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803005506/assets_manifest_backup )
+  INFO [56536e1b] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [7a525e77] Running /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest* as deploy@13.125.158.130
+ DEBUG [7a525e77] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest* )
+ DEBUG [7a525e77] 	/home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json
+ DEBUG [7a525e77] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [7e5358d8] Running /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest* as deploy@13.125.158.130
+ DEBUG [7e5358d8] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest* )
+ DEBUG [7e5358d8] 	/home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json
+ DEBUG [7e5358d8] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [8891c86e] Running /usr/bin/env cp /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json /home/deploy/SmartKwaterSolution/releases/20210803005506/assets_manifest_backup as deploy@13.125.158.130
+ DEBUG [8891c86e] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cp /home/deploy/SmartKwaterSolution/releases/20210803005506/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json /home/deploy/SmartKwaterSolution/releases/20210803005506/assets_manifest_backup )
+  INFO [8891c86e] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [903024aa] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [903024aa] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803005506; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803005506'" 1>&2; false; fi
+ DEBUG [903024aa] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [9709027b] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@13.125.158.130
+ DEBUG [9709027b] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803005506 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [9709027b] Finished in 2.392 seconds with exit status 0 (successful).
+  INFO [bdd30dc5] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210803005506 /home/deploy/SmartKwaterSolution/releases/current as deploy@13.125.158.130
+ DEBUG [bdd30dc5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210803005506 /home/deploy/SmartKwaterSolution/releases/current )
+  INFO [bdd30dc5] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [efe13b9a] Running /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution as deploy@13.125.158.130
+ DEBUG [efe13b9a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution )
+  INFO [efe13b9a] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [c487d98e] Running /usr/bin/env pwd as deploy@13.125.158.130
+ DEBUG [c487d98e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env pwd )
+ DEBUG [c487d98e] 	/home/deploy
+ DEBUG [c487d98e] Finished in 0.039 seconds with exit status 0 (successful).
+ DEBUG [32977341] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [32977341] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [32977341] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [dc24305d] Running /usr/bin/env passenger -v as deploy@13.125.158.130
+ DEBUG [dc24305d] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger -v )
+ DEBUG [dc24305d] 	Phusion Passenger(R) 6.0.10
+ DEBUG [dc24305d] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [4d95a77a] Running /usr/bin/env passenger-config restart-app /home/deploy/SmartKwaterSolution --ignore-app-not-running as deploy@13.125.158.130
+ DEBUG [4d95a77a] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger-config restart-app /home/deploy/SmartKwaterSolution --ignore-app-not-running )
+ DEBUG [4d95a77a] 	*** Cleaning stale instance directory /tmp/passenger.7YGLEjG
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.7YGLEjG/.
+*** Cleaning stale instance directory /tmp/passenger.Heo2VgO
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.Heo2VgO/.
+Restarting /home/deploy/SmartKwaterSolution/current (production)
+  INFO [4d95a77a] Finished in 0.371 seconds with exit status 0 (successful).
+ DEBUG [013898e4] Running /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [013898e4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases )
+ DEBUG [013898e4] 	20210802082221	20210802083000	20210802083740	20210803002354	20210803004128
+20210803005506
+ DEBUG [013898e4] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 13.125.158.130
+ DEBUG [f04e8e68] Running [ -d /home/deploy/SmartKwaterSolution/current ] as deploy@13.125.158.130
+ DEBUG [f04e8e68] Command: [ -d /home/deploy/SmartKwaterSolution/current ]
+ DEBUG [f04e8e68] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG [cab524be] Running /usr/bin/env readlink /home/deploy/SmartKwaterSolution/current as deploy@13.125.158.130
+ DEBUG [cab524be] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env readlink /home/deploy/SmartKwaterSolution/current )
+ DEBUG [cab524be] 	/home/deploy/SmartKwaterSolution/releases/20210803005506
+ DEBUG [cab524be] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [ee856fe5] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802082221 as deploy@13.125.158.130
+ DEBUG [ee856fe5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802082221 )
+  INFO [ee856fe5] Finished in 1.675 seconds with exit status 0 (successful).
+ DEBUG [47822786] Running if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [47822786] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi
+ DEBUG [47822786] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [176744f1] Running /usr/bin/env echo "Branch main (at e8405fd59fd35a984d1f41618c37f90990efc72a) deployed as release 20210803005506 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log as deploy@13.125.158.130
+ DEBUG [176744f1] Command: cd /home/deploy/SmartKwaterSolution/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "Branch main (at e8405fd59fd35a984d1f41618c37f90990efc72a) deployed as release 20210803005506 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log )
+  INFO [176744f1] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-03 10:24:48 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [01f99449] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@13.125.158.130
+ DEBUG [01f99449] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [01f99449] Finished in 0.652 seconds with exit status 0 (successful).
+ DEBUG [5cedcf7f] Running /usr/bin/env which passenger as deploy@13.125.158.130
+ DEBUG [5cedcf7f] Command: /usr/bin/env which passenger
+ DEBUG [5cedcf7f] 	/usr/bin/passenger
+ DEBUG [5cedcf7f] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [bdf82be7] Running /usr/bin/env mkdir -p /tmp as deploy@13.125.158.130
+ DEBUG [bdf82be7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [bdf82be7] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-477f680559050c896ca0.sh 0.0%
+  INFO Uploading /tmp/git-ssh-477f680559050c896ca0.sh 100.0%
+  INFO [d4d865b5] Running /usr/bin/env chmod 700 /tmp/git-ssh-477f680559050c896ca0.sh as deploy@13.125.158.130
+ DEBUG [d4d865b5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-477f680559050c896ca0.sh )
+  INFO [d4d865b5] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [86a14466] Running /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD as deploy@13.125.158.130
+ DEBUG [86a14466] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-477f680559050c896ca0.sh" ; /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD )
+ DEBUG [86a14466] 	e8405fd59fd35a984d1f41618c37f90990efc72a	HEAD
+  INFO [86a14466] Finished in 2.426 seconds with exit status 0 (successful).
+  INFO [410cb48c] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [410cb48c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases )
+  INFO [410cb48c] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [5464d707] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets as deploy@13.125.158.130
+ DEBUG [5464d707] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets )
+  INFO [5464d707] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [4bb727e7] Running [ -f /home/deploy/SmartKwaterSolution/current/REVISION ] as deploy@13.125.158.130
+ DEBUG [4bb727e7] Command: [ -f /home/deploy/SmartKwaterSolution/current/REVISION ]
+ DEBUG [4bb727e7] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [60791537] Running /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null as deploy@13.125.158.130
+ DEBUG [60791537] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null )
+ DEBUG [60791537] 	e8405fd59fd35a984d1f41618c37f90990efc72a
+ DEBUG [60791537] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [ba468119] Running [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ] as deploy@13.125.158.130
+ DEBUG [ba468119] Command: [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ]
+ DEBUG [ba468119] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/SmartKwaterSolution/repo
+ DEBUG [b1fcf92a] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [b1fcf92a] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [b1fcf92a] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [55124bb9] Running /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git as deploy@13.125.158.130
+ DEBUG [55124bb9] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-477f680559050c896ca0.sh" ; /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git )
+  INFO [55124bb9] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [609b7c85] Running /usr/bin/env git remote update --prune as deploy@13.125.158.130
+ DEBUG [609b7c85] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-477f680559050c896ca0.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [609b7c85] 	Fetching origin
+  INFO [609b7c85] Finished in 2.456 seconds with exit status 0 (successful).
+ DEBUG [8e085055] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [8e085055] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [8e085055] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [371f1170] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803012451 as deploy@13.125.158.130
+ DEBUG [371f1170] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-477f680559050c896ca0.sh" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803012451 )
+  INFO [371f1170] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [ad0d2314] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803012451 as deploy@13.125.158.130
+ DEBUG [ad0d2314] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-477f680559050c896ca0.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803012451 )
+  INFO [ad0d2314] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [4eda2e50] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [4eda2e50] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [4eda2e50] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [427ac8c8] Running /usr/bin/env git rev-list --max-count=1 main as deploy@13.125.158.130
+ DEBUG [427ac8c8] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-477f680559050c896ca0.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [427ac8c8] 	e8405fd59fd35a984d1f41618c37f90990efc72a
+ DEBUG [427ac8c8] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [9bbc313c] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [9bbc313c] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi
+ DEBUG [9bbc313c] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [4505cc99] Running /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION as deploy@13.125.158.130
+ DEBUG [4505cc99] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION )
+  INFO [4505cc99] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [fe303a3f] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803012451 /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor /home/deploy/SmartKwaterSolution/releases/20210803012451/public as deploy@13.125.158.130
+ DEBUG [fe303a3f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803012451 /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor /home/deploy/SmartKwaterSolution/releases/20210803012451/public )
+  INFO [fe303a3f] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [6ff6419f] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/log ] as deploy@13.125.158.130
+ DEBUG [6ff6419f] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/log ]
+ DEBUG [6ff6419f] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [8e84ce53] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/log ] as deploy@13.125.158.130
+ DEBUG [8e84ce53] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/log ]
+ DEBUG [8e84ce53] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [ca069876] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803012451/log as deploy@13.125.158.130
+ DEBUG [ca069876] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803012451/log )
+  INFO [ca069876] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [3e78a787] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803012451/log as deploy@13.125.158.130
+ DEBUG [3e78a787] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803012451/log )
+  INFO [3e78a787] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [9e237972] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [9e237972] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids ]
+ DEBUG [9e237972] Finished in 0.034 seconds with exit status 1 (failed).
+ DEBUG [adc9d70b] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [adc9d70b] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids ]
+ DEBUG [adc9d70b] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [f3f9475a] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids as deploy@13.125.158.130
+ DEBUG [f3f9475a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids )
+  INFO [f3f9475a] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [0a890ff9] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids as deploy@13.125.158.130
+ DEBUG [0a890ff9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/pids )
+  INFO [0a890ff9] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [150ef68f] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [150ef68f] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/cache ]
+ DEBUG [150ef68f] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [78db9f52] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [78db9f52] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/cache ]
+ DEBUG [78db9f52] Finished in 0.077 seconds with exit status 1 (failed).
+  INFO [b291e848] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/cache as deploy@13.125.158.130
+ DEBUG [b291e848] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/cache )
+  INFO [b291e848] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [aef0ddf6] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [aef0ddf6] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/sockets ]
+ DEBUG [aef0ddf6] Finished in 0.076 seconds with exit status 1 (failed).
+ DEBUG [236d7a08] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [236d7a08] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/sockets ]
+ DEBUG [236d7a08] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [a8eb43e1] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/sockets as deploy@13.125.158.130
+ DEBUG [a8eb43e1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803012451/tmp/sockets )
+  INFO [a8eb43e1] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [69b560ff] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [69b560ff] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor/bundle ]
+ DEBUG [69b560ff] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [8b49d329] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [8b49d329] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor/bundle ]
+ DEBUG [8b49d329] Finished in 0.073 seconds with exit status 1 (failed).
+  INFO [31fb2d4d] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor/bundle as deploy@13.125.158.130
+ DEBUG [31fb2d4d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803012451/vendor/bundle )
+  INFO [31fb2d4d] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [9fa7a0fa] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/.bundle ] as deploy@13.125.158.130
+ DEBUG [9fa7a0fa] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/.bundle ]
+ DEBUG [9fa7a0fa] Finished in 0.077 seconds with exit status 1 (failed).
+ DEBUG [193d332a] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/.bundle ] as deploy@13.125.158.130
+ DEBUG [193d332a] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/.bundle ]
+ DEBUG [193d332a] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [680e2ff1] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803012451/.bundle as deploy@13.125.158.130
+ DEBUG [680e2ff1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803012451/.bundle )
+  INFO [680e2ff1] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [714e1865] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/public/system ] as deploy@13.125.158.130
+ DEBUG [714e1865] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/public/system ]
+ DEBUG [714e1865] Finished in 0.034 seconds with exit status 1 (failed).
+ DEBUG [44598b7d] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/public/system ] as deploy@13.125.158.130
+ DEBUG [44598b7d] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/public/system ]
+ DEBUG [44598b7d] Finished in 0.077 seconds with exit status 1 (failed).
+  INFO [41adc255] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803012451/public/system as deploy@13.125.158.130
+ DEBUG [41adc255] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803012451/public/system )
+  INFO [41adc255] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [b2ccb234] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/public/uploads ] as deploy@13.125.158.130
+ DEBUG [b2ccb234] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/public/uploads ]
+ DEBUG [b2ccb234] Finished in 0.076 seconds with exit status 1 (failed).
+ DEBUG [97ee0451] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/public/uploads ] as deploy@13.125.158.130
+ DEBUG [97ee0451] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/public/uploads ]
+ DEBUG [97ee0451] Finished in 0.034 seconds with exit status 1 (failed).
+  INFO [7543ed08] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803012451/public/uploads as deploy@13.125.158.130
+ DEBUG [7543ed08] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803012451/public/uploads )
+  INFO [7543ed08] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG [424ac816] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets ] as deploy@13.125.158.130
+ DEBUG [424ac816] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets ]
+ DEBUG [424ac816] Finished in 0.034 seconds with exit status 1 (failed).
+ DEBUG [e63d6ba1] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets ] as deploy@13.125.158.130
+ DEBUG [e63d6ba1] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets ]
+ DEBUG [e63d6ba1] Finished in 0.077 seconds with exit status 1 (failed).
+  INFO [22efe3cb] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets as deploy@13.125.158.130
+ DEBUG [22efe3cb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets )
+  INFO [22efe3cb] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [9f3e5d3c] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [9f3e5d3c] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi
+ DEBUG [9f3e5d3c] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [db8c60da] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@13.125.158.130
+ DEBUG [db8c60da] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [db8c60da] Finished in 0.266 seconds with exit status 0 (successful).
+  INFO [4b73caba] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle as deploy@13.125.158.130
+ DEBUG [4b73caba] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle )
+  INFO [4b73caba] Finished in 0.296 seconds with exit status 0 (successful).
+  INFO [4036e086] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@13.125.158.130
+ DEBUG [4036e086] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [4036e086] Finished in 0.262 seconds with exit status 0 (successful).
+ DEBUG [228c0fd1] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [228c0fd1] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi
+ DEBUG [228c0fd1] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [eb92ccac] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@13.125.158.130
+ DEBUG [eb92ccac] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [eb92ccac] 	The Gemfile's dependencies are satisfied
+ DEBUG [eb92ccac] Finished in 0.348 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [c781c81f] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [c781c81f] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi
+ DEBUG [c781c81f] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [d1432caf] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@13.125.158.130
+ DEBUG [d1432caf] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [d1432caf] 	yarn install v1.22.5
+ DEBUG [d1432caf] 	[1/4] Resolving packages...
+ DEBUG [d1432caf] 	[2/4] Fetching packages...
+ DEBUG [d1432caf] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [d1432caf] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [d1432caf] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [d1432caf] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [d1432caf] 	[3/4] Linking dependencies...
+ DEBUG [d1432caf] 	[4/4] Building fresh packages...
+ DEBUG [d1432caf] 	Done in 11.41s.
+ DEBUG [d1432caf] 	Compiling...
+ DEBUG [d1432caf] 	Compiled all packs in /home/deploy/SmartKwaterSolution/releases/20210803012451/public/packs
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Hash: e4cb1aa40fed2663ee2c
+Version: webpack 4.46.0
+Time: 6432ms
+Built at: 08/03/2021 1:25:21 AM
+                                        Asset       Size  Chunks                         Chunk Names
+       js/application-c3e3aae48c4c321181e9.js   69.4 KiB       0  [emitted] [immutable]  application
+    js/application-c3e3aae48c4c321181e9.js.br   15.4 KiB          [emitted]              
+    js/application-c3e3aae48c4c321181e9.js.gz   17.8 KiB          [emitted]              
+   js/application-c3e3aae48c4c321181e9.js.map    205 KiB       0  [emitted] [dev]        application
+js/application-c3e3aae48c4c321181e9.js.map.br   43.8 KiB          [emitted]              
+js/application-c3e3aae48c4c321181e9.js.map.gz   50.9 KiB          [emitted]              
+                                manifest.json  364 bytes          [emitted]              
+                             manifest.json.br  133 bytes          [emitted]              
+                             manifest.json.gz  142 bytes          [emitted]              
+Entrypoint application = js/application-c3e3aae48c4c321181e9.js js/application-c3e3aae48c4c321181e9.js.map
+[0] (webpack)/buildin/module.js 552 bytes {0} [built]
+[4] ./app/javascript/packs/application.js 480 bytes {0} [built]
+[5] ./app/javascript/channels/index.js 205 bytes {0} [built]
+[6] ./app/javascript/channels sync _channel\.js$ 160 bytes {0} [built]
+    + 3 hidden modules
+
+  INFO [d1432caf] Finished in 23.261 seconds with exit status 0 (successful).
+ DEBUG [7b15cad0] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [7b15cad0] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi
+ DEBUG [7b15cad0] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [c2f43c7b] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803012451/assets_manifest_backup as deploy@13.125.158.130
+ DEBUG [c2f43c7b] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803012451/assets_manifest_backup )
+  INFO [c2f43c7b] Finished in 0.039 seconds with exit status 0 (successful).
+ DEBUG [107afa7b] Running /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest* as deploy@13.125.158.130
+ DEBUG [107afa7b] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest* )
+ DEBUG [107afa7b] 	/home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json
+ DEBUG [107afa7b] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [36832538] Running /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest* as deploy@13.125.158.130
+ DEBUG [36832538] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest* )
+ DEBUG [36832538] 	/home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json
+ DEBUG [36832538] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [7a48bfea] Running /usr/bin/env cp /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json /home/deploy/SmartKwaterSolution/releases/20210803012451/assets_manifest_backup as deploy@13.125.158.130
+ DEBUG [7a48bfea] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cp /home/deploy/SmartKwaterSolution/releases/20210803012451/public/assets/.sprockets-manifest-3607d6f78bce4e3cd3913747d34de361.json /home/deploy/SmartKwaterSolution/releases/20210803012451/assets_manifest_backup )
+  INFO [7a48bfea] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [45d13cdb] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [45d13cdb] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803012451; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803012451'" 1>&2; false; fi
+ DEBUG [45d13cdb] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [d64df347] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@13.125.158.130
+ DEBUG [d64df347] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803012451 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [d64df347] Finished in 2.805 seconds with exit status 0 (successful).
+  INFO [ba67c7ea] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210803012451 /home/deploy/SmartKwaterSolution/releases/current as deploy@13.125.158.130
+ DEBUG [ba67c7ea] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/releases/20210803012451 /home/deploy/SmartKwaterSolution/releases/current )
+  INFO [ba67c7ea] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [020d2dfd] Running /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution as deploy@13.125.158.130
+ DEBUG [020d2dfd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mv /home/deploy/SmartKwaterSolution/releases/current /home/deploy/SmartKwaterSolution )
+  INFO [020d2dfd] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [a23c8535] Running /usr/bin/env pwd as deploy@13.125.158.130
+ DEBUG [a23c8535] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env pwd )
+ DEBUG [a23c8535] 	/home/deploy
+ DEBUG [a23c8535] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [acb7fa90] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [acb7fa90] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [acb7fa90] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [3404266c] Running /usr/bin/env passenger -v as deploy@13.125.158.130
+ DEBUG [3404266c] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger -v )
+ DEBUG [3404266c] 	Phusion Passenger(R) 6.0.10
+ DEBUG [3404266c] Finished in 0.287 seconds with exit status 0 (successful).
+  INFO [60ddc1b3] Running /usr/bin/env passenger-config restart-app /home/deploy/SmartKwaterSolution --ignore-app-not-running as deploy@13.125.158.130
+ DEBUG [60ddc1b3] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger-config restart-app /home/deploy/SmartKwaterSolution --ignore-app-not-running )
+ DEBUG [60ddc1b3] 	*** Cleaning stale instance directory /tmp/passenger.7YGLEjG
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.7YGLEjG/.
+*** Cleaning stale instance directory /tmp/passenger.Heo2VgO
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.Heo2VgO/.
+Restarting /home/deploy/SmartKwaterSolution/current (production)
+  INFO [60ddc1b3] Finished in 0.399 seconds with exit status 0 (successful).
+ DEBUG [fdb93ac8] Running /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [fdb93ac8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls -x /home/deploy/SmartKwaterSolution/releases )
+ DEBUG [fdb93ac8] 	20210802083000	20210802083740	20210803002354	20210803004128	20210803005506
+20210803012451
+ DEBUG [fdb93ac8] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 13.125.158.130
+ DEBUG [4d8a82bb] Running [ -d /home/deploy/SmartKwaterSolution/current ] as deploy@13.125.158.130
+ DEBUG [4d8a82bb] Command: [ -d /home/deploy/SmartKwaterSolution/current ]
+ DEBUG [4d8a82bb] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [314538c4] Running /usr/bin/env readlink /home/deploy/SmartKwaterSolution/current as deploy@13.125.158.130
+ DEBUG [314538c4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env readlink /home/deploy/SmartKwaterSolution/current )
+ DEBUG [314538c4] 	/home/deploy/SmartKwaterSolution/releases/20210803012451
+ DEBUG [314538c4] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [b0382ed7] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802083000 as deploy@13.125.158.130
+ DEBUG [b0382ed7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210802083000 )
+  INFO [b0382ed7] Finished in 1.762 seconds with exit status 0 (successful).
+ DEBUG [0ca79a88] Running if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [0ca79a88] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases'" 1>&2; false; fi
+ DEBUG [0ca79a88] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [0ca787a3] Running /usr/bin/env echo "Branch main (at e8405fd59fd35a984d1f41618c37f90990efc72a) deployed as release 20210803012451 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log as deploy@13.125.158.130
+ DEBUG [0ca787a3] Command: cd /home/deploy/SmartKwaterSolution/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "Branch main (at e8405fd59fd35a984d1f41618c37f90990efc72a) deployed as release 20210803012451 by holy" >> /home/deploy/SmartKwaterSolution/revisions.log )
+  INFO [0ca787a3] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-03 10:32:02 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [04cb1b36] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@13.125.158.130
+ DEBUG [04cb1b36] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [04cb1b36] Finished in 0.711 seconds with exit status 0 (successful).
+ DEBUG [13ceb877] Running /usr/bin/env which passenger as deploy@13.125.158.130
+ DEBUG [13ceb877] Command: /usr/bin/env which passenger
+ DEBUG [13ceb877] 	/usr/bin/passenger
+ DEBUG [13ceb877] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [ec00ec1a] Running /usr/bin/env mkdir -p /tmp as deploy@13.125.158.130
+ DEBUG [ec00ec1a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [ec00ec1a] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-23cf0aaad91def1e4473.sh 0.0%
+  INFO Uploading /tmp/git-ssh-23cf0aaad91def1e4473.sh 100.0%
+  INFO [27361e51] Running /usr/bin/env chmod 700 /tmp/git-ssh-23cf0aaad91def1e4473.sh as deploy@13.125.158.130
+ DEBUG [27361e51] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-23cf0aaad91def1e4473.sh )
+  INFO [27361e51] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [5e5b0e95] Running /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD as deploy@13.125.158.130
+ DEBUG [5e5b0e95] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-23cf0aaad91def1e4473.sh" ; /usr/bin/env git ls-remote git@github.com:PnC-jeju/SmartKwaterSolution.git HEAD )
+ DEBUG [5e5b0e95] 	e8405fd59fd35a984d1f41618c37f90990efc72a	HEAD
+  INFO [5e5b0e95] Finished in 2.440 seconds with exit status 0 (successful).
+  INFO [f81f4c51] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases as deploy@13.125.158.130
+ DEBUG [f81f4c51] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared /home/deploy/SmartKwaterSolution/releases )
+  INFO [f81f4c51] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [90ef20a9] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets as deploy@13.125.158.130
+ DEBUG [90ef20a9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/shared/public/assets )
+  INFO [90ef20a9] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [31a7e31b] Running [ -f /home/deploy/SmartKwaterSolution/current/REVISION ] as deploy@13.125.158.130
+ DEBUG [31a7e31b] Command: [ -f /home/deploy/SmartKwaterSolution/current/REVISION ]
+ DEBUG [31a7e31b] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [f0fbc43a] Running /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null as deploy@13.125.158.130
+ DEBUG [f0fbc43a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cat /home/deploy/SmartKwaterSolution/current/REVISION 2>/dev/null )
+ DEBUG [f0fbc43a] 	e8405fd59fd35a984d1f41618c37f90990efc72a
+ DEBUG [f0fbc43a] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [64119109] Running [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ] as deploy@13.125.158.130
+ DEBUG [64119109] Command: [ -f /home/deploy/SmartKwaterSolution/repo/HEAD ]
+ DEBUG [64119109] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/SmartKwaterSolution/repo
+ DEBUG [a2693455] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [a2693455] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [a2693455] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [5f4a05ce] Running /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git as deploy@13.125.158.130
+ DEBUG [5f4a05ce] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-23cf0aaad91def1e4473.sh" ; /usr/bin/env git remote set-url origin git@github.com:PnC-jeju/SmartKwaterSolution.git )
+  INFO [5f4a05ce] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [8efe2f8b] Running /usr/bin/env git remote update --prune as deploy@13.125.158.130
+ DEBUG [8efe2f8b] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-23cf0aaad91def1e4473.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8efe2f8b] 	Fetching origin
+  INFO [8efe2f8b] Finished in 2.452 seconds with exit status 0 (successful).
+ DEBUG [a5e4c07d] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [a5e4c07d] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [a5e4c07d] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [31073d98] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803013205 as deploy@13.125.158.130
+ DEBUG [31073d98] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-23cf0aaad91def1e4473.sh" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803013205 )
+  INFO [31073d98] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [32d6846a] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803013205 as deploy@13.125.158.130
+ DEBUG [32d6846a] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-23cf0aaad91def1e4473.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/SmartKwaterSolution/releases/20210803013205 )
+  INFO [32d6846a] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [56267fe5] Running if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [56267fe5] Command: if test ! -d /home/deploy/SmartKwaterSolution/repo; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/repo'" 1>&2; false; fi
+ DEBUG [56267fe5] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [56a36768] Running /usr/bin/env git rev-list --max-count=1 main as deploy@13.125.158.130
+ DEBUG [56a36768] Command: cd /home/deploy/SmartKwaterSolution/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-23cf0aaad91def1e4473.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [56a36768] 	e8405fd59fd35a984d1f41618c37f90990efc72a
+ DEBUG [56a36768] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [9e829611] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [9e829611] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi
+ DEBUG [9e829611] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [eda67d93] Running /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION as deploy@13.125.158.130
+ DEBUG [eda67d93] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803013205 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "e8405fd59fd35a984d1f41618c37f90990efc72a" > REVISION )
+  INFO [eda67d93] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [eec539ec] Running /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803013205 /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor /home/deploy/SmartKwaterSolution/releases/20210803013205/public as deploy@13.125.158.130
+ DEBUG [eec539ec] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/SmartKwaterSolution/releases/20210803013205 /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor /home/deploy/SmartKwaterSolution/releases/20210803013205/public )
+  INFO [eec539ec] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [ad68e762] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/log ] as deploy@13.125.158.130
+ DEBUG [ad68e762] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/log ]
+ DEBUG [ad68e762] Finished in 0.034 seconds with exit status 1 (failed).
+ DEBUG [b833121b] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/log ] as deploy@13.125.158.130
+ DEBUG [b833121b] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/log ]
+ DEBUG [b833121b] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [9d2e4652] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803013205/log as deploy@13.125.158.130
+ DEBUG [9d2e4652] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803013205/log )
+  INFO [9d2e4652] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [4e487791] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803013205/log as deploy@13.125.158.130
+ DEBUG [4e487791] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/log /home/deploy/SmartKwaterSolution/releases/20210803013205/log )
+  INFO [4e487791] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [f1786163] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [f1786163] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids ]
+ DEBUG [f1786163] Finished in 0.035 seconds with exit status 1 (failed).
+ DEBUG [6bada862] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids ] as deploy@13.125.158.130
+ DEBUG [6bada862] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids ]
+ DEBUG [6bada862] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [484b439f] Running /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids as deploy@13.125.158.130
+ DEBUG [484b439f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids )
+  INFO [484b439f] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [e26558a8] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids as deploy@13.125.158.130
+ DEBUG [e26558a8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/pids /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/pids )
+  INFO [e26558a8] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [7aa571fa] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [7aa571fa] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/cache ]
+ DEBUG [7aa571fa] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [0c38e111] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/cache ] as deploy@13.125.158.130
+ DEBUG [0c38e111] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/cache ]
+ DEBUG [0c38e111] Finished in 0.076 seconds with exit status 1 (failed).
+  INFO [6b5271c6] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/cache as deploy@13.125.158.130
+ DEBUG [6b5271c6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/cache /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/cache )
+  INFO [6b5271c6] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [c7dd63ba] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [c7dd63ba] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/sockets ]
+ DEBUG [c7dd63ba] Finished in 0.074 seconds with exit status 1 (failed).
+ DEBUG [a0e14a3c] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/sockets ] as deploy@13.125.158.130
+ DEBUG [a0e14a3c] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/sockets ]
+ DEBUG [a0e14a3c] Finished in 0.032 seconds with exit status 1 (failed).
+  INFO [7cf1c040] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/sockets as deploy@13.125.158.130
+ DEBUG [7cf1c040] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/tmp/sockets /home/deploy/SmartKwaterSolution/releases/20210803013205/tmp/sockets )
+  INFO [7cf1c040] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [28601bcb] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [28601bcb] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor/bundle ]
+ DEBUG [28601bcb] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [0e6f4787] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor/bundle ] as deploy@13.125.158.130
+ DEBUG [0e6f4787] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor/bundle ]
+ DEBUG [0e6f4787] Finished in 0.072 seconds with exit status 1 (failed).
+  INFO [e08f611d] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor/bundle as deploy@13.125.158.130
+ DEBUG [e08f611d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/vendor/bundle /home/deploy/SmartKwaterSolution/releases/20210803013205/vendor/bundle )
+  INFO [e08f611d] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [1c9f7533] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/.bundle ] as deploy@13.125.158.130
+ DEBUG [1c9f7533] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/.bundle ]
+ DEBUG [1c9f7533] Finished in 0.076 seconds with exit status 1 (failed).
+ DEBUG [a6f6b698] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/.bundle ] as deploy@13.125.158.130
+ DEBUG [a6f6b698] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/.bundle ]
+ DEBUG [a6f6b698] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [82c4fca8] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803013205/.bundle as deploy@13.125.158.130
+ DEBUG [82c4fca8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/.bundle /home/deploy/SmartKwaterSolution/releases/20210803013205/.bundle )
+  INFO [82c4fca8] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG [103ad223] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/public/system ] as deploy@13.125.158.130
+ DEBUG [103ad223] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/public/system ]
+ DEBUG [103ad223] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [502ad16d] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/public/system ] as deploy@13.125.158.130
+ DEBUG [502ad16d] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/public/system ]
+ DEBUG [502ad16d] Finished in 0.076 seconds with exit status 1 (failed).
+  INFO [e90c837f] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803013205/public/system as deploy@13.125.158.130
+ DEBUG [e90c837f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/system /home/deploy/SmartKwaterSolution/releases/20210803013205/public/system )
+  INFO [e90c837f] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [0c4f14c9] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/public/uploads ] as deploy@13.125.158.130
+ DEBUG [0c4f14c9] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/public/uploads ]
+ DEBUG [0c4f14c9] Finished in 0.077 seconds with exit status 1 (failed).
+ DEBUG [e53aa887] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/public/uploads ] as deploy@13.125.158.130
+ DEBUG [e53aa887] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/public/uploads ]
+ DEBUG [e53aa887] Finished in 0.033 seconds with exit status 1 (failed).
+  INFO [18bb89b3] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803013205/public/uploads as deploy@13.125.158.130
+ DEBUG [18bb89b3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/uploads /home/deploy/SmartKwaterSolution/releases/20210803013205/public/uploads )
+  INFO [18bb89b3] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [bbab3528] Running [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/public/assets ] as deploy@13.125.158.130
+ DEBUG [bbab3528] Command: [ -L /home/deploy/SmartKwaterSolution/releases/20210803013205/public/assets ]
+ DEBUG [bbab3528] Finished in 0.035 seconds with exit status 1 (failed).
+ DEBUG [6d11c14a] Running [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/public/assets ] as deploy@13.125.158.130
+ DEBUG [6d11c14a] Command: [ -d /home/deploy/SmartKwaterSolution/releases/20210803013205/public/assets ]
+ DEBUG [6d11c14a] Finished in 0.075 seconds with exit status 1 (failed).
+  INFO [ccb2718f] Running /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803013205/public/assets as deploy@13.125.158.130
+ DEBUG [ccb2718f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/SmartKwaterSolution/shared/public/assets /home/deploy/SmartKwaterSolution/releases/20210803013205/public/assets )
+  INFO [ccb2718f] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [96caa36d] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [96caa36d] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi
+ DEBUG [96caa36d] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [e228ce98] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@13.125.158.130
+ DEBUG [e228ce98] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803013205 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [e228ce98] Finished in 0.260 seconds with exit status 0 (successful).
+  INFO [dcbb0220] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle as deploy@13.125.158.130
+ DEBUG [dcbb0220] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803013205 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/SmartKwaterSolution/shared/bundle )
+  INFO [dcbb0220] Finished in 0.301 seconds with exit status 0 (successful).
+  INFO [e47cea45] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@13.125.158.130
+ DEBUG [e47cea45] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803013205 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [e47cea45] Finished in 0.258 seconds with exit status 0 (successful).
+ DEBUG [8def0a54] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [8def0a54] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi
+ DEBUG [8def0a54] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [02cf9471] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@13.125.158.130
+ DEBUG [02cf9471] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803013205 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [02cf9471] 	The Gemfile's dependencies are satisfied
+ DEBUG [02cf9471] Finished in 0.357 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [95336708] Running if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi as deploy@13.125.158.130
+ DEBUG [95336708] Command: if test ! -d /home/deploy/SmartKwaterSolution/releases/20210803013205; then echo "Directory does not exist '/home/deploy/SmartKwaterSolution/releases/20210803013205'" 1>&2; false; fi
+ DEBUG [95336708] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [18a9e52e] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@13.125.158.130
+ DEBUG [18a9e52e] Command: cd /home/deploy/SmartKwaterSolution/releases/20210803013205 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [18a9e52e] 	rake aborted!
+ DEBUG [18a9e52e] 	ActiveSupport::MessageEncryptor::InvalidMessage: ActiveSupport::MessageEncryptor::InvalidMessage
+ DEBUG [18a9e52e] 	/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/message_encryptor.rb:203:in `rescue in _decrypt'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/message_encryptor.rb:180:in `_decrypt'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/message_encryptor.rb:154:in `decrypt_and_verify'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/messages/rotator.rb:22:in `decrypt_and_verify'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_file.rb:92:in `decrypt'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_file.rb:54:in `read'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_configuration.rb:21:in `read'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_configuration.rb:33:in `config'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_configuration.rb:38:in `options'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/core_ext/module/delegation.rb:309:in `method_missing'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:438:in `secret_key_base'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:177:in `key_generator'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/globalid-0.5.1/lib/global_id/railtie.rb:29:in `block (2 levels) in <class:Railtie>'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:68:in `block in execute_hook'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:51:in `each'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application/finisher.rb:140:in `block in <module:Finisher>'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:32:in `instance_exec'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:32:in `run'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:61:in `block in run_initializers'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:60:in `run_initializers'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:391:in `initialize!'
+/home/deploy/SmartKwaterSolution/releases/20210803013205/config/environment.rb:5:in `<main>'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:34:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/dependencies.rb:332:in `block in require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/dependencies.rb:299:in `load_dependency'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/dependencies.rb:332:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:367:in `require_environment!'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:533:in `block in run_tasks_blocks'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/task.rb:61:in `block (2 levels) in define'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/3.0.1/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/3.0.1/bin/bundle:23:in `<main>'
+ DEBUG [18a9e52e] 	
+Caused by:
+ DEBUG [18a9e52e] 	ArgumentError: key must be 16 bytes
+ DEBUG [18a9e52e] 	/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/message_encryptor.rb:190:in `key='
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/message_encryptor.rb:190:in `_decrypt'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/message_encryptor.rb:154:in `decrypt_and_verify'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/messages/rotator.rb:22:in `decrypt_and_verify'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_file.rb:92:in `decrypt'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_file.rb:54:in `read'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_configuration.rb:21:in `read'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_configuration.rb:33:in `config'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/encrypted_configuration.rb:38:in `options'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/core_ext/module/delegation.rb:309:in `method_missing'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:438:in `secret_key_base'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:177:in `key_generator'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/globalid-0.5.1/lib/global_id/railtie.rb:29:in `block (2 levels) in <class:Railtie>'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:68:in `block in execute_hook'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:51:in `each'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application/finisher.rb:140:in `block in <module:Finisher>'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:32:in `instance_exec'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:32:in `run'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:61:in `block in run_initializers'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/initializable.rb:60:in `run_initializers'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:391:in `initialize!'
+/home/deploy/SmartKwaterSolution/releases/20210803013205/config/environment.rb:5:in `<main>'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/bootsnap-1.7.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:34:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/dependencies.rb:332:in `block in require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/dependencies.rb:299:in `load_dependency'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/activesupport-6.1.4/lib/active_support/dependencies.rb:332:in `require'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:367:in `require_environment!'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/railties-6.1.4/lib/rails/application.rb:533:in `block in run_tasks_blocks'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/task.rb:61:in `block (2 levels) in define'
+/home/deploy/SmartKwaterSolution/shared/bundle/ruby/3.0.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/3.0.1/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/3.0.1/bin/bundle:23:in `<main>'
+ DEBUG [18a9e52e] 	Tasks: TOP => environment
+ DEBUG [18a9e52e] 	(See full trace by running task with --trace)
